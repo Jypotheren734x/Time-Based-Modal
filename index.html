@@ -3,24 +3,37 @@
     <head>
         <meta charset="UTF-8">
         <title>Modal</title>
+        <link rel="stylesheet" href="css/bubbles.css">
         <link rel="stylesheet" href="css/stylesheet.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
-    <h1>Login/Register</h1>
-    <div class="form-group">
-        <label class="form-control-label" for="username">Username</label>
-        <input type="username" class="form-control form-control-success" id="username">
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal">Open Modal</button>
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+        <div class="modal-dialog wrapper" role="document">
+            <ul class="bg-bubbles" id="#bubbles"></ul>
+            <div class="modal-content">
+                <div class="modal-header" style="z-index: 666;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1 class="modal-title">Login/Register</h1>
+                </div>
+                <div class="modal-body" style="z-index: 666;">
+                    <label class="form-control-label" for="username">Username</label>
+                    <input type="username" class="form-control form-control-success" id="username">
 
-        <label class="form-control-label" for="email">Email</label>
-        <input type="email" class="form-control form-control-success" id="email">
+                    <label class="form-control-label" for="email">Email</label>
+                    <input type="email" class="form-control form-control-success" id="email">
 
-
-        <label class="form-control-label" for="password">Password</label>
-        <input type="password" class="form-control form-control-success" id="password">
-
-        <input type="submit" class="btn" value="Submit">
+                    <label class="form-control-label" for="password">Password</label>
+                    <input type="password" class="form-control form-control-success" id="password">
+                </div>
+                <div class="modal-footer" style="z-index: 666;">
+                    <input type="submit" class="btn" value="Submit">
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/main.js"></script>
     </body>
